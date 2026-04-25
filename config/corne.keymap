@@ -168,6 +168,48 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        mm_y_left: mm_y_left {
+            compatible = "zmk,behavior-mod-morph";
+            bindings = <&kp Y>, <&kp LEFT>;
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        mm_h_down: mm_h_down {
+            compatible = "zmk,behavior-mod-morph";
+            bindings = <&kp H>, <&kp DOWN>;
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        mm_a_up: mm_a_up {
+            compatible = "zmk,behavior-mod-morph";
+            bindings = <&kp A>, <&kp UP>;
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        mm_e_right: mm_e_right {
+            compatible = "zmk,behavior-mod-morph";
+            bindings = <&kp E>, <&kp RIGHT>;
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        mm_j_bspc: mm_j_bspc {
+            compatible = "zmk,behavior-mod-morph";
+            bindings = <&kp J>, <&kp BSPC>;
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        mm_j_del: mm_j_del {
+            compatible = "zmk,behavior-mod-morph";
+            bindings = <&mm_j_bspc>, <&kp DEL>;
+            #binding-cells = <0>;
+            mods = <(MOD_LCMD|MOD_LCTL)>;
+        };
     };
 
     combos {
@@ -270,10 +312,10 @@
 
         GRAPHITE {
             bindings = <
-&kp TAB           &kp B  &kp L  &kp D      &kp W     &kp Z              &kp SQT    &kp F      &kp O      &kp U     &kp J      &kp BSPC
-&mt LCTRL ESC     &kp N  &kp R  &kp T      &kp S     &kp G              &kp Y      &kp H      &kp A      &kp E     &kp I      &kp DQT
-&kp LSHIFT        &kp Q  &kp X  &kp M      &kp C     &kp V              &kp K      &kp P      &kp COMMA  &kp DOT   &kp SLASH  &kp RSHIFT
-                                &kp BSPC   &kp LALT  &mt LGUI SPACE     &lt SYM SPACE  &kp RET    &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT
+&kp TAB           &kp B  &kp L  &kp D       &kp W     &kp Z              &kp SQT      &kp F      &kp O      &kp U      &mm_j_del   &kp BSPC
+&mt LCTRL ESC     &kp N  &kp R  &kp T       &kp S     &kp G              &mm_y_left   &mm_h_down &mm_a_up   &mm_e_right &kp I       &kp DQT
+&kp LSHIFT        &kp Q  &kp X  &kp M       &kp C     &kp V              &kp K        &kp P      &kp COMMA  &kp DOT     &kp SLASH   &kp RSHIFT
+                                &caps_word  &kp LALT  &mt LGUI SPACE     &lt SYM SPACE  &kp RET    &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT
             >;
         };
 
