@@ -270,10 +270,10 @@
 
         VUKEYS {
             bindings = <
-&kp F13  &kp Q  &kp C  &kp D    &kp M      &kp V      &kp B      &kp W       &kp U        &kp K  &kp SQT         &kp F13
-&kp F11  &kp N  &kp S  &kp T    &kp R      &kp L      &kp Y      &kp A       &kp E        &kp O  &kp I           &kp F12
-&kp F14  &kp X  &kp F  &kp G    &kp H      &kp Z      &kp SLASH  &kp P       &mm_dot_col  &kp J  &mm_comma_semi  &kp F14
-                       &kp ESC  &kp SPACE  &mo SYM    &kp BSPC   &kp LSHIFT  &kp RET
+&kp TAB     &kp B  &kp L  &kp D      &kp W     &kp Z              &kp SQT        &kp F      &kp O      &kp U     &kp J      &kp BSPC
+&kp ESC     &kp N  &kp R  &kp T      &kp S     &kp G              &kp Y          &kp H      &kp A      &kp E     &kp I      &kp DQT
+&kp LSHIFT  &kp Q  &kp X  &kp M      &kp C     &kp V              &kp K          &kp P      &kp COMMA  &kp DOT   &kp SLASH  &kp RSHIFT
+                          &kp LCTRL  &kp LALT  &mt LGUI SPACE     &mt RCTRL RET  &kp SPACE  &mo SYM
             >;
         };
 
@@ -288,10 +288,10 @@
 
         SYM {
             bindings = <
-&trans  &mm_pipe_bslh  &mm_lbkt_lbrace  &mm_lpr_hash  &mm_lcbr_dollar  &trans       &trans     &mm_rcbr_amp  &mm_rpr_star  &mm_rbkt   &kp GRAVE  &trans
-&trans  &kp N1         &kp N2           &mm_n3_left   &mm_n4_right     &kp EQUAL    &kp MINUS  &mm_n7_down   &mm_n8_up     &mm_n9_lt  &mm_n0_gt  &trans
-&trans  &trans         &trans           &trans        &kp N5           &kp TAB      &kp TAB    &kp N6        &trans        &trans     &trans     &trans
-                                        &mo PREF      &trans           &trans       &mo PREF   &trans        &mo PREF
+&trans  &kp N1   &kp N2   &kp N3   &kp N4   &kp N5     &kp N6   &kp N7   &kp N8   &kp N9   &kp N0   &trans
+&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5     &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans
+&trans  &kp F11  &kp F12  &trans   &trans   &trans     &trans   &trans   &trans   &trans   &trans   &trans
+                          &trans   &trans   &trans     &trans   &trans   &trans
             >;
         };
 
