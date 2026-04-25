@@ -208,7 +208,7 @@
             compatible = "zmk,behavior-mod-morph";
             bindings = <&mm_j_bspc>, <&kp DEL>;
             #binding-cells = <0>;
-            mods = <(MOD_LCMD|MOD_LCTL)>;
+            mods = <(MOD_LGUI|MOD_LCTL)>;
         };
     };
 
